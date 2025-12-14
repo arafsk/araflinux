@@ -1,9 +1,10 @@
 #!/bin/bash
 
-rm araflinux*
+rm araflinux.db
+rm araflinux.files
 
 echo "repo-add"
-repo-add -n -R araflinux.db.tar.gz *.pkg.tar.zst    
+repo-add -n -R araflinux.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
