@@ -1,19 +1,19 @@
 #!/bin/bash
 
-rm araflinux_repo*
+rm personal_repo*
 
 echo "repo-add"
-repo-add ./araflinux_repo.db.tar.gz ./*
+repo-add -n -R personal_repo.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
-rm araflinux_repo.db
+rm personal_repo.db
 
-rm araflinux_repo.files
+rm personal_repo.files
 
-mv araflinux_repo.db.tar.gz araflinux_repo.db
+mv personal_repo.db.tar.gz personal_repo.db
 
-mv araflinux_repo.files.tar.gz araflinux_repo.files
+mv personal_repo.files.tar.gz personal_repo.files
 
 echo "####################################"
 echo "Repo Updated!!"
