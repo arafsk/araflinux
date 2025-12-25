@@ -1,20 +1,20 @@
 #!/bin/bash
 
-rm personal_repo*
+rm arafsk_repo*
 
-echo "repo-add"
-repo-add -n -R personal_repo.db.tar.gz *.pkg.tar.zst
+echo "arafsk_repo-add"
+repo-add -n -R arafsk_repo.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
-rm personal_repo.db
+rm arafsk_repo.db
 
-rm personal_repo.files
+rm arafsk_repo.files
 
-mv personal_repo.db.tar.gz personal_repo.db
+mv arafsk_repo.db.tar.gz arafsk_repo.db
 
-mv personal_repo.files.tar.gz personal_repo.files
+mv arafsk_repo.files.tar.gz arafsk_repo.files
 
 echo "####################################"
-echo "Repo Updated!!"
+echo "arafsk_repo Updated!!"
 echo "####################################"
