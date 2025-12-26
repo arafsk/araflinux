@@ -2,8 +2,8 @@
 
 rm arafsk_repo*
 
-echo "arafsk_repo-add"
-repo-add arafsk_repo.db.tar.gz ./*.pkg.tar.zst
+echo "repo-add"
+repo-add -n -R arafsk_repo.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
@@ -16,5 +16,5 @@ mv arafsk_repo.db.tar.gz arafsk_repo.db
 mv arafsk_repo.files.tar.gz arafsk_repo.files
 
 echo "####################################"
-echo "arafsk_repo Updated!!"
+echo "Repo Updated!!"
 echo "####################################"
